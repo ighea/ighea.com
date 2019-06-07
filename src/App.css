@@ -12,11 +12,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
-  min-height: 40vh;
+  min-height: 0vh;
   transition: 1s ease-out;
 }
 
-.App-header-large {
+.App-header-frontpage {
   min-height: 80vh;
   background-position: right bottom;
 }
