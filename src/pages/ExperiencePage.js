@@ -11,7 +11,9 @@ class ExperiencePage extends React.Component {
 
         <h2>Experience</h2>
 
-        <p>Through work and hobbies I have tinkered at least with the following programming languages, frameworks and techniques.</p>
+        <p>On my not-so-long but eventful career I have worked on development, depmoyment, testing and quality assuring of various project, solutions and 3rd party partners.</p>
+
+        <p>Through work and hobbies I have tinkered at least with the following programming languages, frameworks and techniques:</p>
 
         <TitledCommaSeparatedWordList
           title="Languages"
