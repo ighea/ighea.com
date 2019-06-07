@@ -21,7 +21,6 @@ class ContactPage extends React.Component {
     return (
       <div className="MainPage PageContent">
 
-
         <h2>Contact</h2>
 
         <img src={image} alt="Oled showing Ighea powered by Raspberry PI3." style={styles.image} />
