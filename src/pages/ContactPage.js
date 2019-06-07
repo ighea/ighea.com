@@ -15,7 +15,7 @@ class ContactPage extends React.Component {
 
         <section>
           <h3>Hail through LinkedIn</h3>
-          <p>Don&acute;t be afraid! Send me a message on <a href="https://www.linkedin.com/in/mika-hynna-07984a108/" target="_blank">LinkedIn</a>!</p>
+          <p>Don&acute;t be afraid! Send me a message on <a href="https://www.linkedin.com/in/mika-hynna-07984a108/" target="_blank" rel="noopener noreferrer">LinkedIn</a>!</p>
         </section>
 
       </div>

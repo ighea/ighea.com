@@ -2,20 +2,22 @@ import React from 'react';
 import { Route, NavLink, Switch, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
+import './App.css';
+import './assets/animations.css';
+
 import MainPage from './pages/MainPage.js';
 import ExperiencePage from './pages/ExperiencePage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
 import ContactPage from './pages/ContactPage.js';
 import NotFoundPage from './pages/NotFoundPage.js';
 
-import './App.css';
-import './assets/animations.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faCheckSquare, faCoffee);
 
 class BaseApp extends React.Component {
-
-  constructor(props) {
-    super(props)
-  }
 
   render() {
 
@@ -68,8 +70,16 @@ class BaseApp extends React.Component {
 
         <footer className="App-footer">
           <ul>
-            <li><a href="https://www.linkedin.com/in/mika-hynna-07984a108/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-            <li><a href="https://github.com/ighea" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li>
+              <a href="https://www.linkedin.com/in/mika-hynna-07984a108/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={['fab', 'linkedin' ]} />&nbsp;Linkedin
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/ighea" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={['fab', 'github' ]} />&nbsp;GitHub
+              </a>
+            </li>
           </ul>
         </footer>
 

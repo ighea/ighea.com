@@ -34,7 +34,7 @@ class NotFoundPage extends React.Component {
 
           </div>
 
-          <iframe width="500" height="315" src="https://www.youtube-nocookie.com/embed/mPVC2UJRAbc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={boxStyles}></iframe>
+          <iframe title="Youtube video" width="500" height="315" src="https://www.youtube-nocookie.com/embed/mPVC2UJRAbc?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style={boxStyles}></iframe>
 
         </div>
 
