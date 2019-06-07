@@ -1,0 +1,6 @@
+.TitledCommaSeparatedWordList span:after {
+  content: ", ";
+}
+.TitledCommaSeparatedWordList span:last-child:after {
+  content: "";
+}
