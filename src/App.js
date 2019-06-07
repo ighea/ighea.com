@@ -21,12 +21,13 @@ class BaseApp extends React.Component {
 
   render() {
 
-    const classes = (this.props.location.pathname === "/" ? 'App-header App-header-frontpage' : 'App-header');
+    const isFrontPage = (this.props.location.pathname === "/");
+    const frontpageDefinationClass = (isFrontPage ? 'frontpage' : '');
 
     return (
       <div className="App">
 
-        <header className={classes}>
+        <header className={[ "App-header", frontpageDefinationClass ].join(" ")}>
 
           <section className="App-header-main">
 
@@ -48,7 +49,7 @@ class BaseApp extends React.Component {
 
         </header>
 
-        <main className="App-main">
+        <main className={[ "App-main", frontpageDefinationClass ].join(" ")}>
           <Route render={({location}) => (
           <TransitionGroup>
             <CSSTransition

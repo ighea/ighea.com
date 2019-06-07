@@ -24,7 +24,7 @@ class ExperiencePage extends React.Component {
 
         <img src={image} alt="Oled showing Ighea powered by Raspberry PI3." style={styles.image} />
 
-        <p>On my not-so-long but eventful career I have worked on development, depmoyment, testing and quality assuring of various project, solutions and 3rd party partners.</p>
+        <p>On my not-so-long but eventful career I have worked on development, deployment, testing and quality assuring of various project, solutions and 3rd party partners.</p>
 
         <p>Through work and hobbies I have tinkered at least with the following programming languages, frameworks and techniques:</p>
 

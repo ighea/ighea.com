@@ -5,8 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class MainPage extends React.Component {
 
   render() {
-
-    const age = (new Date()).getFullYear() - 1986;
+    const year_of_birth = 1986;
+    const age = (new Date()).getFullYear() - year_of_birth;
 
     return (
       <div className="MainPage PageContent">
@@ -15,7 +15,7 @@ class MainPage extends React.Component {
 
         <p>Cheerious!</p>
 
-        <p>My name is <b>Mika Hynnä</b> I am {age} years old technologically aligned fellow currently living in Finland.</p>
+        <p>My name is <b>Mika Hynnä</b>, I am {age} years old technologically aligned fellow currently living in Finland.</p>
 
         <p>I have always been keenly interested in solving logical problems, playing with building blocks and doing research on new topics.</p>
 

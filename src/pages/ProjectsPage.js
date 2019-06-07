@@ -8,7 +8,7 @@ class ProjectsPage extends React.Component {
 
         <h2>Projects</h2>
 
-        <p>Various work and hobby projects I have involved with.</p>
+        <p>Various work and hobby projects I have been involved with.</p>
 
       </div>
     );

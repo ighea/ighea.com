@@ -16,7 +16,7 @@
   transition: all 500ms ease;
 }
 
-.App-header-frontpage {
+.App-header.frontpage {
   min-height: 80vh;
   background-position: right bottom;
 }
@@ -72,8 +72,13 @@ nav ul li a {
   text-shadow: 2px 2px #000000;
 }
 
+
 .App-main {
   min-height: 80vh;
+}
+
+.App-main.frontpage {
+  min-height: 40vh;
 }
 
 .App-footer {
