@@ -1,11 +1,15 @@
 import React from 'react';
 import { Route, NavLink, Switch, withRouter } from "react-router-dom";
-import './App.css';
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import MainPage from './pages/MainPage.js';
 import ExperiencePage from './pages/ExperiencePage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
+import ContactPage from './pages/ContactPage.js';
 import NotFoundPage from './pages/NotFoundPage.js';
+
+import './App.css';
+import './assets/animations.css';
 
 class BaseApp extends React.Component {
 
@@ -34,6 +38,7 @@ class BaseApp extends React.Component {
                 <li><NavLink to="/" exact>Me!</NavLink></li>
                 <li><NavLink to="/experience">Experience</NavLink></li>
                 <li><NavLink to="/projects/">Projects</NavLink></li>
+                <li><NavLink to="/contact">Contact</NavLink></li>
               </ul>
             </nav>
 
@@ -41,15 +46,25 @@ class BaseApp extends React.Component {
 
         </header>
 
-        <main>
-          <Switch componentDidMount={() => console.log("SWITCH", this)}>
-            <Route exact path="/" component={MainPage} />
-            <Route exact path="/experience" component={ExperiencePage} />
-            <Route path="/projects/" component={ProjectsPage} />
-            <Route component={NotFoundPage} />
-          </Switch>
+        <main className="App-main">
+          <Route render={({location}) => (
+          <TransitionGroup>
+            <CSSTransition
+              key={location.key}
+              classNames="fade"
+              timeout={500}
+            >
+              <Switch location={location}>
+                <Route exact path="/" component={MainPage} />
+                <Route exact path="/experience" component={ExperiencePage} />
+                <Route path="/projects/" component={ProjectsPage} />
+                <Route path="/contact" component={ContactPage} />
+                <Route component={NotFoundPage} />
+              </Switch>
+            </CSSTransition>
+          </TransitionGroup>
+          )} />
         </main>
-
 
         <footer className="App-footer">
           <ul>

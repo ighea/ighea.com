@@ -1,7 +1,18 @@
 import React from 'react';
 
+import image from '../assets/images/ighea_spi.jpg';
 
 import TitledCommaSeparatedWordList from '../components/TitledCommaSeparatedWordList.js';
+
+const styles = {};
+
+styles.image = {
+  float: "right",
+  marginLeft: "40pt",
+  marginBottom: "30pt",
+  height: "auto",
+  maxWidth: "100%",
+}
 
 class ExperiencePage extends React.Component {
 
@@ -10,6 +21,8 @@ class ExperiencePage extends React.Component {
       <div className="PageContent">
 
         <h2>Experience</h2>
+
+        <img src={image} alt="Oled showing Ighea powered by Raspberry PI3." style={styles.image} />
 
         <p>On my not-so-long but eventful career I have worked on development, depmoyment, testing and quality assuring of various project, solutions and 3rd party partners.</p>
 

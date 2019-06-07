@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: right center;
   min-height: 0vh;
-  transition: 1s ease-out;
+  transition: all 500ms ease;
 }
 
 .App-header-frontpage {
@@ -34,6 +34,9 @@ nav ul li {
   padding-left: 2vw;
   font-size: 20pt;
   text-shadow: 2px 2px #000000;
+}
+nav ul li a {
+  transition: color 500ms ease;
 }
 
 .App-header section {
@@ -69,6 +72,9 @@ nav ul li {
   text-shadow: 2px 2px #000000;
 }
 
+.App-main {
+  min-height: 80vh;
+}
 
 .App-footer {
   background-color: #fff;
