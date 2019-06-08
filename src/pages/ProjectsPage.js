@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import Project from '../components/Project.js';
 
 class ProjectsPage extends React.Component {
@@ -69,6 +71,20 @@ class ProjectsPage extends React.Component {
           </div>
         </Project>
 
+        <Project title="LightCourier HTML5">
+          <div>
+            <p>LightCourier HTML5 is a HTML5/JavaScript port of a Microsoft XNA based game written in C#.</p>
+            <p>The idea is to stay out of darkness long enough to survive from a lamp post to another past each level.</p>
+            <p>The original game was created during 48h game development festival and I did the keyboard smashing. This port was published at 25.01.2011 and seems to be still (8.6.2019) working well on more modern Firefox browser.</p>
+            <p>
+              See on <a href="https://github.com/ighea/lightcourier-html5" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</a> or <a href="https://ighea.github.io/lightcourier-html5/" target="_blank" rel="noopener noreferrer">try it out</a> (keyboard required)!
+            </p>
+          </div>
+          <div>
+            <Image image="lightcourier-html5.png" alt="Starting menu of LightCourier HTML5" />
+          </div>
+        </Project>
+
       </div>
     );
   }
@@ -77,6 +93,7 @@ class ProjectsPage extends React.Component {
 
 class Image extends React.Component {
   render() {
+
     const image_name = this.props.image;
 
     const regexp = /(.*)\.(.+)/;
