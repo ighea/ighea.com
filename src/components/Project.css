@@ -1,0 +1,36 @@
+.Project {
+  display: block;
+  padding-bottom: 30pt;
+  margin-top: 30pt;
+  margin-bottom: 20pt;
+}
+.Project > section {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-around;
+}
+.Project > section > *:first-child {
+  flex-grow: 2;
+  margin-right: 40pt;
+  margin-left: 0pt;
+}
+.Project > section > *:last-child {
+  flex-shrink: 1;
+}
+.Project > section > * {
+  width: 300px;
+}
+
+.Project:nth-child(odd) > section > *:first-child {
+  margin-right: 0pt;
+  margin-left: 0pt;
+}
+@media(min-width: 1024px) {
+  .Project:nth-child(odd) > section > *:first-child {
+    margin-right: 0pt;
+    margin-left: 40pt;
+  }
+  .Project:nth-child(odd) > section > *:last-child {
+    order: -1;
+  }
+}
