@@ -82,7 +82,7 @@ class Image extends React.Component {
     const regexp = /(.*)\.(.+)/;
     const match = regexp.exec(image_name);
     const thumbnail_image_name = match[1] + "_thumbnail." + match[2];
-console.log(thumbnail_image_name);
+
     return (
       <a
         href={process.env.PUBLIC_URL + '/images/' + image_name}
