@@ -10,9 +10,9 @@ class MainNav extends React.Component {
       <nav className="MainNav">
         <ul>
           <li><NavLink to="/" exact>Me!</NavLink></li>
-          <li><NavLink to="/experience">Experience</NavLink></li>
+          <li><NavLink to="/experience/">Experience</NavLink></li>
           <li><NavLink to="/projects/">Projects</NavLink></li>
-          <li><NavLink to="/contact">Contact</NavLink></li>
+          <li><NavLink to="/contact/">Contact</NavLink></li>
         </ul>
       </nav>
     );

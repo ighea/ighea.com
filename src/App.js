@@ -49,9 +49,9 @@ class BaseApp extends React.Component {
             >
               <Switch location={location}>
                 <Route exact path="/" component={MainPage} />
-                <Route exact path="/experience" component={ExperiencePage} />
+                <Route exact path="/experience/" component={ExperiencePage} />
                 <Route path="/projects/" component={ProjectsPage} />
-                <Route path="/contact" component={ContactPage} />
+                <Route path="/contact/" component={ContactPage} />
                 <Route component={NotFoundPage} />
               </Switch>
             </CSSTransition>
