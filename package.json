@@ -19,7 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy:production": "rsync -avzhe ssh --progress ./build/* ighea@ighea.com:/home/ighea/public/ighea.com"
   },
   "eslintConfig": {
     "extends": "react-app"
