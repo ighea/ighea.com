@@ -20,6 +20,11 @@ code {
     monospace;
 }
 
+h3 {
+  border-bottom: 1pt solid #42aaf4;
+  padding-bottom: 4pt;
+}
+
 a {
   text-decoration: none;
 }
@@ -31,11 +36,18 @@ a:hover {
   text-decoration: underline;
   color: #70baef;
 }
-a.active {
-  text-decoration: underline;
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .PageContent {
   padding: 2vh 20vw;
   min-height: 200pt;
+}
+@media (max-width: 1024px) {
+  .PageContent {
+    padding: 2vh 5vw;
+  }
 }

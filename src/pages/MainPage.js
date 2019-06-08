@@ -19,7 +19,7 @@ class MainPage extends React.Component {
 
         <p>I have always been keenly interested in solving logical problems, playing with building blocks and doing research on new topics.</p>
 
-        <p>I jumped on the GNU/Linux <FontAwesomeIcon icon={['fab', 'linux' ]} /> bandwagon on early 2000s and haven&acute;t regretted that choise. Even, when the first attempts with various distributions were not very successful due hardware support issues.</p>
+        <p>I jumped on the GNU/Linux <FontAwesomeIcon icon={['fab', 'linux' ]} /> bandwagon on early 2000s and haven&acute;t regretted that choise. Nowadays GNU/Linux powers all my home and work platforms.</p>
 
         <p>These pages contain some examples of things I have done since I found QBasic from Windows 95´s installation media.</p>
 

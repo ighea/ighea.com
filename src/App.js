@@ -1,9 +1,11 @@
 import React from 'react';
-import { Route, NavLink, Switch, withRouter } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import './App.css';
 import './assets/animations.css';
+
+import MainNav from './components/MainNav.js';
 
 import MainPage from './pages/MainPage.js';
 import ExperiencePage from './pages/ExperiencePage.js';
@@ -28,25 +30,13 @@ class BaseApp extends React.Component {
       <div className="App">
 
         <header className={[ "App-header", frontpageDefinationClass ].join(" ")}>
-
           <section className="App-header-main">
-
             <div>
               <h1>Mika Hynnä</h1>
               <p>Programmer, Web Developer and Tech Enthusiast!</p>
             </div>
-
-            <nav>
-              <ul>
-                <li><NavLink to="/" exact>Me!</NavLink></li>
-                <li><NavLink to="/experience">Experience</NavLink></li>
-                <li><NavLink to="/projects/">Projects</NavLink></li>
-                <li><NavLink to="/contact">Contact</NavLink></li>
-              </ul>
-            </nav>
-
+            <MainNav />
           </section>
-
         </header>
 
         <main className={[ "App-main", frontpageDefinationClass ].join(" ")}>
