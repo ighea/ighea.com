@@ -1,8 +1,5 @@
 .Project {
   display: block;
-  padding-bottom: 30pt;
-  margin-top: 30pt;
-  margin-bottom: 20pt;
 }
 .Project > section {
   display: flex;

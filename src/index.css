@@ -23,6 +23,7 @@ code {
 h3 {
   border-bottom: 1pt solid #42aaf4;
   padding-bottom: 4pt;
+  padding-top: 20pt;
 }
 
 a {
@@ -40,6 +41,11 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
+}
+
+p {
+  margin-top: 0pt;
+  margin-bottom: 15pt;
 }
 
 .PageContent {
