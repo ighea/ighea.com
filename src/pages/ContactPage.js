@@ -32,6 +32,9 @@ class ContactPage extends React.Component {
 
         <div style={styles.container}>
           <section style={styles.content}>
+
+            <p>Here are various ways you may attempt to take contact with me. On most web services I go by with username/nickname <b>ighea</b> if you wish to try your luck.</p>
+
             <h3><FontAwesomeIcon icon="user-circle" /> Poke on IRC</h3>
             <p>You can find me on IRC on Freenode, IRCNet and QuakeNet networks by nick <b>ighea</b>.</p>
 
