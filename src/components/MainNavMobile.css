@@ -1,0 +1,48 @@
+.MainNavMobile {
+  display: flex;
+  align-self: right;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.MainNavMobile .MenuButton {
+  background: none;
+  border: none;
+  padding: 10pt;
+  margin: 0;
+  color: #eee;
+  font-size: 25pt;
+  cursor: pointer;
+}
+.MainNavMobile .MenuButton:hover {
+  color: #70baef;
+}
+.MainNavMobile .MenuButton:active {
+  color: #fff;
+}
+.MainNavMobile .MainNavMobileMenu {
+  z-index: 1000;
+  top: 10vh;
+  right: 0;
+  left: 0;
+  position: absolute;
+  font-size: 25pt;
+  background-color: #222;
+  padding: 20pt 20vw;
+  text-align: center;
+  border-top: 1px solid #42aaf4;
+  border-bottom: 1px solid #42aaf4;
+}
+.MainNavMobile .MainNavMobileMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.MainNavMobile .MainNavMobileMenu ul li a {
+  list-style: none;
+  display: block;
+  margin: 10pt;
+}
+.MainNavMobile .MainNavMobileMenu ul li a.active {
+  color: #fff;
+}

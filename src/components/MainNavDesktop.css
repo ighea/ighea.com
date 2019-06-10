@@ -1,0 +1,30 @@
+nav.MainNavDesktop {
+  display: flex;
+  flex-direction: row;
+  align-self: right;
+  align-items: center;
+  justify-content: center;
+}
+nav.MainNavDesktop ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav.MainNavDesktop ul li {
+  display: inline-block;
+  padding-left: 2vw;
+  font-size: 20pt;
+  text-shadow: 2px 2px #000000;
+}
+nav.MainNavDesktop ul li a {
+  transition: color 500ms ease;
+}
+nav.MainNavDesktop ul li a.active {
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  nav.MainNavDesktop ul li {
+    font-size: 18pt;
+  }
+}

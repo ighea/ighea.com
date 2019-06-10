@@ -29,23 +29,18 @@
   background-color: rgba(0, 0, 0, 0.5);
   min-height: 8vh;
   display: flex;
+  flex-direction: row;
+  align-content: space-between;
 }
 
-.App-header section.App-header-main div {
-  margin-right: auto;
+.App-header section.App-header-main > * {
+  margin: auto;
 }
 
 .App-header section.App-header-main div p {
   font-size: 2vh;
   margin: 0;
   text-shadow: 2px 2px #000000;
-}
-
-.App-header section.App-header-main nav {
-  display: flex;
-  align-self: right;
-  align-items: center;
-  justify-content: center;
 }
 
 .App-header section h1 {

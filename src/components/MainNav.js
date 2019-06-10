@@ -1,21 +1,42 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
 
-import './MainNav.css';
+import MainNavDesktop from './MainNavDesktop.js';
+import MainNavMobile from './MainNavMobile.js';
 
 class MainNav extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentWillMount() {
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
 
   render() {
-    return (
-      <nav className="MainNav">
-        <ul>
-          <li><NavLink to="/" exact>Me!</NavLink></li>
-          <li><NavLink to="/experience/">Experience</NavLink></li>
-          <li><NavLink to="/projects/">Projects</NavLink></li>
-          <li><NavLink to="/contact/">Contact</NavLink></li>
-        </ul>
-      </nav>
-    );
+    if(this.state.width < 800) {
+      return (
+        <MainNavMobile links={this.props.links} />
+      );
+    } else {
+      return (
+        <MainNavDesktop links={this.props.links} />
+      );
+    }
   }
 
 }

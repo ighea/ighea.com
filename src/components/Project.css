@@ -31,3 +31,8 @@
     order: -1;
   }
 }
+@media(max-width: 800px) {
+  .Project img {
+    margin-bottom: 10pt;
+  }
+}

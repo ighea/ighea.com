@@ -7,7 +7,6 @@ import 'assets/animations.css';
 
 import MainNav from 'components/MainNav.js';
 import Footer from 'components/Footer.js';
-import ExternalLink from 'components/ExternalLink.js';
 
 import Page from 'pages/Page.js';
 import MainPage from 'pages/MainPage.js';
@@ -16,11 +15,10 @@ import ProjectsPage from 'pages/ProjectsPage.js';
 import ContactPage from 'pages/ContactPage.js';
 import NotFoundPage from 'pages/NotFoundPage.js';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faUserCircle, faEnvelope } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faUserCircle, faEnvelope);
+import { faUserCircle, faEnvelope, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faUserCircle, faEnvelope, faBars, faTimes);
 
 class BaseApp extends React.Component {
 
@@ -38,7 +36,29 @@ class BaseApp extends React.Component {
               <h1>Mika Hynnä</h1>
               <p>Programmer, Web Developer and Tech Enthusiast!</p>
             </div>
-            <MainNav />
+            <MainNav links={[
+              {
+                name: "Me!",
+                path: "/",
+                title: "The front page and about me!",
+                exact: true,
+              },
+              {
+                name: "Experience",
+                path: "/experience/",
+                title: "Some parts of my wast experience",
+              },
+              {
+                name: "Projects",
+                path: "/projects/",
+                title: "Projects I have done or tinkered with",
+              },
+              {
+                name: "Contact",
+                path: "/contact/",
+                title: "Attempt to contact me",
+              },
+            ]} />
           </section>
         </header>
 
