@@ -85,6 +85,32 @@ class ProjectsPage extends React.Component {
           </div>
         </Project>
 
+        <Project title="Teddi - Adventures of Teddi-bear">
+          <div>
+            <p>Teddi is a rushed game made out of a rushed attempt to create a 2D game engine.</p>
+            <p>Initially aimed as a entry to a game competition. Results were horendous due to lack of time and actual good ideas what the game would be about. At least the screenshot shows my aptitude for graphical design...</p>
+            <p>Written in 2007 using C++ and libSDL v1.2.</p>
+            <p>See on <a href="https://github.com/ighea/teddi" title="Take a peek at the code stuff on the GitHub." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</a>.
+            </p>
+          </div>
+          <div>
+            <Image image="teddi-mainmenu.png" alt="Teddi main menu screen" />
+          </div>
+        </Project>
+
+        <Project title="Simetra - An another Alien Phobia clone">
+          <div>
+            <p>The Simetra is an Alien Phobia game in which you simply try to survive as long as possible by killing aliens spawning from sides of the screen.</p>
+            <p>Scores can be tracked either by kills or survival time. Features a shotgun power-up and health kits that spawn randomly.</p>
+            <p>Written in 2006 using C and libSDL v1.2 and friends for drawing graphics, text and sounds.</p>
+            <p>See on <a href="https://github.com/ighea/simetra" title="Take a peek at the code stuff on the GitHub." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</a>.
+            </p>
+          </div>
+          <div>
+            <Image image="simetra-gameplay.png" alt="Simetra gameplay" />
+          </div>
+        </Project>
+
       </div>
     );
   }
