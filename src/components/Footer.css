@@ -1,0 +1,14 @@
+.Footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 2vh 2vw;
+}
+
+.Footer ul {
+  display: inline-block;
+}
+
+.Footer ul li {
+  display: inline-block;
+  margin-right: calc(1vw + 5pt);
+}
