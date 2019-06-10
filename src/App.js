@@ -7,6 +7,7 @@ import './assets/animations.css';
 
 import MainNav from './components/MainNav.js';
 
+import Page from './pages/Page.js';
 import MainPage from './pages/MainPage.js';
 import ExperiencePage from './pages/ExperiencePage.js';
 import ProjectsPage from './pages/ProjectsPage.js';
@@ -48,11 +49,21 @@ class BaseApp extends React.Component {
               timeout={500}
             >
               <Switch location={location}>
-                <Route exact path="/" component={MainPage} />
-                <Route exact path="/experience/" component={ExperiencePage} />
-                <Route path="/projects/" component={ProjectsPage} />
-                <Route path="/contact/" component={ContactPage} />
-                <Route component={NotFoundPage} />
+                <Route exact path="/" render={props => (
+                  <Page {...props} component={MainPage} title="Programmer, Web Developer and Tech Enthusiast!" />
+                )} />
+                <Route exact path="/experience/" render={props => (
+                  <Page {...props} component={ExperiencePage}  title="Experience"  />
+                )} />
+                <Route exact path="/projects/" render={props => (
+                  <Page {...props} component={ProjectsPage}  title="Projects"  />
+                )} />
+                <Route exact path="/contact/" render={props => (
+                  <Page {...props} component={ContactPage}  title="Contact"  />
+                )} />
+                <Route render={props => (
+                  <Page {...props} component={NotFoundPage}  title="404 - Page Not Found"  />
+                )} />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
