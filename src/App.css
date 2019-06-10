@@ -62,18 +62,3 @@
 .App-main.frontpage {
   min-height: 40vh;
 }
-
-.App-footer {
-  background-color: #fff;
-  text-align: center;
-  padding: 2vh 2vw;
-}
-
-.App-footer ul {
-  display: inline-block;
-}
-
-.App-footer ul li {
-  display: inline-block;
-  margin-right: 1vw;
-}

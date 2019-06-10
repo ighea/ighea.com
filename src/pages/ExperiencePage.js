@@ -1,8 +1,9 @@
 import React from 'react';
 
-import image from '../assets/images/ighea_spi.jpg';
+import image from 'assets/images/ighea_spi.jpg';
 
-import TitledCommaSeparatedWordList from '../components/TitledCommaSeparatedWordList.js';
+import TitledCommaSeparatedWordList from 'components/TitledCommaSeparatedWordList.js';
+import ExternalLink from 'components/ExternalLink.js';
 
 const styles = {};
 styles.container = {
@@ -96,7 +97,7 @@ class ExperiencePage extends React.Component {
                 "Involved in two system migrations. Worked with and implemented supports for various 3rd party APIs, including payment systems and processors."
               ]}
             />
-            <p>Over ten years of experience on GNU/Linux. Built <a href="http://www.linuxfromscratch.org/" target="_blank" rel="noopener noreferrer" title="Go to external site.">Linux From Scratch</a> successfully!</p>
+            <p>Over ten years of experience on GNU/Linux. Built <ExternalLink href="http://www.linuxfromscratch.org/" title="Go to external site.">Linux From Scratch</ExternalLink> successfully!</p>
           </section>
 
           <section style={styles.image}>

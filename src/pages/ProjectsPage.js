@@ -2,7 +2,8 @@ import React from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Project from '../components/Project.js';
+import Project from 'components/Project.js';
+import ExternalLink from 'components/ExternalLink.js';
 
 class ProjectsPage extends React.Component {
 
@@ -77,7 +78,7 @@ class ProjectsPage extends React.Component {
             <p>The idea is to stay out of darkness long enough to survive from a lamp post to another past each level.</p>
             <p>The original game was created during 48h game development festival and I did the keyboard smashing. This port was published at 25.01.2011 and seems to be still (8.6.2019) working well on more modern Firefox browser.</p>
             <p>
-              See on <a href="https://github.com/ighea/lightcourier-html5" title="Take a peek at the code stuff on the GitHub." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</a> or <a href="https://ighea.github.io/lightcourier-html5/" title="Opens to new window. Usable only with desktop or laptop." target="_blank" rel="noopener noreferrer">try it out</a> (keyboard required)!
+              See on <ExternalLink href="https://github.com/ighea/lightcourier-html5" title="Take a peek at the code stuff on the GitHub."><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</ExternalLink> or <ExternalLink href="https://ighea.github.io/lightcourier-html5/" title="Opens to new window. Usable only with desktop or laptop.">try it out</ExternalLink> (keyboard required)!
             </p>
           </div>
           <div>
@@ -90,7 +91,7 @@ class ProjectsPage extends React.Component {
             <p>Teddi is a rushed game made out of a rushed attempt to create a 2D game engine.</p>
             <p>Initially aimed as a entry to a game competition. Results were horendous due to lack of time and actual good ideas what the game would be about. At least the screenshot shows my aptitude for graphical design...</p>
             <p>Written in 2007 using C++ and libSDL v1.2.</p>
-            <p>See on <a href="https://github.com/ighea/teddi" title="Take a peek at the code stuff on the GitHub." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</a>.
+            <p>See on <ExternalLink href="https://github.com/ighea/teddi" title="Take a peek at the code stuff on the GitHub."><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</ExternalLink>.
             </p>
           </div>
           <div>
@@ -103,7 +104,7 @@ class ProjectsPage extends React.Component {
             <p>The Simetra is an Alien Phobia game in which you simply try to survive as long as possible by killing aliens spawning from sides of the screen.</p>
             <p>Scores can be tracked either by kills or survival time. Features a shotgun power-up and health kits that spawn randomly.</p>
             <p>Written in 2006 using C and libSDL v1.2 and friends for drawing graphics, text and sounds.</p>
-            <p>See on <a href="https://github.com/ighea/simetra" title="Take a peek at the code stuff on the GitHub." target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</a>.
+            <p>See on <ExternalLink href="https://github.com/ighea/simetra" title="Take a peek at the code stuff on the GitHub."><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</ExternalLink>.
             </p>
           </div>
           <div>
@@ -127,14 +128,12 @@ class Image extends React.Component {
     const thumbnail_image_name = match[1] + "_thumbnail." + match[2];
 
     return (
-      <a
+      <ExternalLink
         href={process.env.PUBLIC_URL + '/images/' + image_name}
         title={"Open large image of " + this.props.alt}
-        target="_blank"
-        rel="noopener noreferrer"
       >
         <img src={process.env.PUBLIC_URL + '/images/' + thumbnail_image_name} alt={this.props.alt} />
-      </a>
+      </ExternalLink>
     );
   }
 }

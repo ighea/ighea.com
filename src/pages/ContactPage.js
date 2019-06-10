@@ -3,7 +3,9 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Mailto from 'react-protected-mailto'
 
-import image from '../assets/images/desk.jpg';
+import image from 'assets/images/desk.jpg';
+
+import ExternalLink from 'components/ExternalLink.js';
 
 const styles = {};
 styles.container = {
@@ -39,7 +41,7 @@ class ContactPage extends React.Component {
             <p>You can find me on IRC on Freenode, IRCNet and QuakeNet networks by nick <b>ighea</b>.</p>
 
             <h3><FontAwesomeIcon icon={['fab', 'linkedin' ]} /> Hail through LinkedIn</h3>
-            <p>Don&acute;t be afraid! Send me a message on <a href="https://www.linkedin.com/in/mika-hynna-07984a108/" target="_blank" rel="noopener noreferrer">LinkedIn</a>!</p>
+            <p>Don&acute;t be afraid! Send me a message on <ExternalLink href="https://www.linkedin.com/in/mika-hynna-07984a108/">LinkedIn</ExternalLink>!</p>
 
             <h3><FontAwesomeIcon icon="envelope" /> Send e-mail</h3>
             <p>
