@@ -12,7 +12,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
-  min-height: 0vh;
+  min-height: 10vh;
   transition: all 500ms ease;
 }
 
@@ -21,35 +21,6 @@
   background-position: right bottom;
 }
 
-.App-header section {
-  padding: 1vh 3vw;
-}
-
-.App-header section.App-header-main {
-  background-color: rgba(0, 0, 0, 0.5);
-  min-height: 8vh;
-  display: flex;
-  flex-direction: row;
-  align-content: space-between;
-}
-
-.App-header section.App-header-main > * {
-  margin: auto;
-}
-
-.App-header section.App-header-main div p {
-  font-size: 2vh;
-  margin: 0;
-  text-shadow: 2px 2px #000000;
-}
-
-.App-header section h1 {
-  font-size: 4vh;
-  margin: 0;
-  text-shadow: 2px 2px #000000;
-}
-
-
 .App-main {
   min-height: 80vh;
 }
@@ -57,3 +28,4 @@
 .App-main.frontpage {
   min-height: 40vh;
 }
+

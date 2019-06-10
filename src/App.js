@@ -5,7 +5,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import './App.css';
 import 'assets/animations.css';
 
-import MainNav from 'components/MainNav.js';
+import Header from 'components/Header.js';
 import Footer from 'components/Footer.js';
 
 import Page from 'pages/Page.js';
@@ -31,12 +31,7 @@ class BaseApp extends React.Component {
       <div className="App">
 
         <header className={[ "App-header", frontpageDefinationClass ].join(" ")}>
-          <section className="App-header-main">
-            <div>
-              <h1>Mika Hynnä</h1>
-              <p>Programmer, Web Developer and Tech Enthusiast!</p>
-            </div>
-            <MainNav links={[
+          <Header links={[
               {
                 name: "Me!",
                 path: "/",
@@ -58,8 +53,8 @@ class BaseApp extends React.Component {
                 path: "/contact/",
                 title: "Attempt to contact me",
               },
-            ]} />
-          </section>
+            ]}
+          />
         </header>
 
         <main className={[ "App-main", frontpageDefinationClass ].join(" ")}>

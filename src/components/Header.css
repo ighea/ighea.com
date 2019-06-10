@@ -1,0 +1,54 @@
+.Header {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  /* fixed header */
+  position: fixed;
+  display: flex;
+  width: 100%;
+}
+
+.Header > * {
+  margin: auto;
+}
+
+.Header h1 {
+  font-size: 4vh;
+  margin: 0;
+  text-shadow: 2px 2px #000000;
+}
+
+.Header > div > p {
+  font-size: 2vh;
+  margin: 0;
+  text-shadow: 2px 2px #000000;
+}
+
+@media (min-width: 800px) {
+  .Header.Header-past-beginning {
+    background-color: #111;
+    min-height: 6vh;
+    /* and with style: */
+    transition: background-color 500ms ease-in, min-height 500ms;
+  }
+  .Header.Header-past-beginning > div > h1 {
+    font-size: 20pt;
+  }
+  .Header.Header-past-beginning > div > p {
+    font-size: 12pt;
+  }
+}
+@media (max-width: 800px) {
+  .Header.Header-past-beginning {
+    background-color: #111;
+    /* and with style: */
+    transition: background-color 500ms;
+  }
+}
+@media (max-width: 320px) {
+  .Header > div > p {
+    font-size: 1.7vh;
+  }
+}
