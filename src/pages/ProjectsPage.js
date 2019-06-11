@@ -86,6 +86,19 @@ class ProjectsPage extends React.Component {
           </div>
         </Project>
 
+        <Project title="SaunaVisio utility program">
+          <div>
+            <p>SaunaVisio utility program (or SaunaVisio-aputyökalu in Finnish) was a script for timing media to be recorded and downloading media from SaunaVisio web interface and later it became a full-fledged application for SaunaVisio IPTV solution content management.</p>
+            <p>The program featured a download manager, fast TV-program search and ability to set TV-programs to be recorded automatically by pre-defined filters.</p>
+            <p>Written in 2008 using python and PyGTK for GUI.</p>
+            <p>See on <ExternalLink href="https://github.com/ighea/saunavisio-utility-program" title="Take a peek at the code stuff on the GitHub."><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</ExternalLink>.
+            </p>
+          </div>
+          <div>
+            <Image image="saunavisio-gui.jpg" alt="SaunaVisio GUI main screen" />
+          </div>
+        </Project>
+
         <Project title="Teddi - Adventures of Teddi-bear">
           <div>
             <p>Teddi is a rushed game made out of a rushed attempt to create a 2D game engine.</p>
