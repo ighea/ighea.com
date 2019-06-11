@@ -34,7 +34,7 @@ class ExperiencePage extends React.Component {
 
           <section style={styles.content}>
 
-            <p>On my not-so-long but eventful career I have worked on development, deployment, testing and quality assuring of various project, solutions and with 3rd party partners.</p>
+            <p>On my not-so-long but eventful career I have worked on development, deployment, testing and quality assuring of various projects, solutions and with 3rd party partners.</p>
 
             <h3>Working history</h3>
 
