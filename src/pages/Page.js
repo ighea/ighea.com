@@ -12,7 +12,10 @@ class Page extends React.Component {
       full_title = title + " - " + full_title;
     }
 
-    document.title = full_title;
+    // Set title only if it has changed.
+    if(document.title !== full_title) {
+      document.title = full_title;
+    }
 
   }
 

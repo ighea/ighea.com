@@ -28,7 +28,7 @@ class ContactPage extends React.Component {
 
   render() {
     return (
-      <div className="MainPage PageContent">
+      <div className="PageContent">
 
         <h2>Contact</h2>
 
