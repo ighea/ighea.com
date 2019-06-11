@@ -86,6 +86,20 @@ class ProjectsPage extends React.Component {
           </div>
         </Project>
 
+        <Project title="PORA">
+          <div>
+            <p>PORA is an action platform puzzle game (like Dig Dug) developed by team of four for Microsoft's XNA game competition..</p>
+            <p>The point of the game is to survive multiple levels from start to end while avoiding obstacles and solving environment puzzles.</p>
+            <p>The game was written in early 2010 using C# and Microsoft&acute;s XNA. I did the coding while other partners took care of actual design and art.</p>
+            <p>
+              See on <ExternalLink href="https://github.com/ighea/porax" title="Take a peek at the code stuff on the GitHub."><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</ExternalLink>
+            </p>
+          </div>
+          <div>
+            <Image image="pora-collection.png" alt="Collection of PORA screenshots" />
+          </div>
+        </Project>
+
         <Project title="SaunaVisio utility program">
           <div>
             <p>SaunaVisio utility program (or SaunaVisio-aputyökalu in Finnish) was a script for timing media to be recorded and downloading media from SaunaVisio web interface and later it became a full-fledged application for SaunaVisio IPTV solution content management.</p>
