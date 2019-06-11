@@ -29,3 +29,8 @@
   min-height: 40vh;
 }
 
+@media (max-width: 800px) {
+  .App-header {
+    background-image: url(./assets/images/banner-small.jpg);
+  }
+}
