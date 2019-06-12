@@ -11,32 +11,44 @@ class LazyImage extends React.Component {
 
     this.myRef = React.createRef();
 
-    if('IntersectionObserver' in window) {
-      this.intersectionObserver = new IntersectionObserver((entries) => {
-        if(entries[0].intersectionRatio <= 0) {
-          return;
-        }
-        // element observed and root margins intersects
-        this.setState({ visible: true });
-        this.unobserve();
-      }, {
-        rootMargin: "20%"
-      });
-    } else {
-      this.setState({ visible: true });
-    }
+    this.isObserverSupported = ('IntersectionObserver' in window);
 
+    this.intersectionObserver = null;
+  }
+
+  loadImage() {
+    this.setState({ visible: true });
   }
 
   observe() {
-    this.intersectionObserver && this.intersectionObserver.observe(this.myRef.current);
+    this.isObserverSupported && this.intersectionObserver && this.intersectionObserver.observe(this.myRef.current);
   }
 
   unobserve() {
-    this.intersectionObserver && this.intersectionObserver.unobserve(this.myRef.current);
+    this.isObserverSupported && this.intersectionObserver && this.intersectionObserver.disconnect(this.myRef.current);
   }
 
   componentDidMount() {
+    if(!this.isObserverSupported) {
+      this.loadImage();
+      return;
+    }
+
+    const options = {
+      rootMargin: "200px 0px 200px 0px"
+    };
+
+    this.intersectionObserver = new IntersectionObserver((entries) => {
+      for(const entry of entries) {
+        if(entry.intersectionRatio <= 0) {
+          return;
+        }
+        // element observed and root margins intersects
+        this.unobserve();
+        this.loadImage();
+      }
+    }, options);
+
     this.observe();
   }
 
@@ -49,7 +61,7 @@ class LazyImage extends React.Component {
       <img
         ref={this.myRef}
         src={this.state.visible ? this.props.src : ""}
-        srcset={this.props.srcset}
+        srcSet={this.state.visible ? this.props.srcset : ""}
         width={this.props.width}
         height={this.props.height}
         sizes={this.props.sizes}
