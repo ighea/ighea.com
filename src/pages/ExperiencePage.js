@@ -4,6 +4,7 @@ import image from 'assets/images/ighea_spi.jpg';
 
 import TitledCommaSeparatedWordList from 'components/TitledCommaSeparatedWordList.js';
 import ExternalLink from 'components/ExternalLink.js';
+import LazyImage from 'components/LazyImage.js';
 
 const styles = {};
 styles.container = {
@@ -101,7 +102,7 @@ class ExperiencePage extends React.Component {
           </section>
 
           <section style={styles.image}>
-            <img src={image} alt="Oled showing Ighea powered by Raspberry PI3." />
+            <LazyImage src={image} alt="Oled showing Ighea powered by Raspberry PI3." />
           </section>
         </div>
 

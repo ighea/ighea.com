@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Project from 'components/Project.js';
 import ExternalLink from 'components/ExternalLink.js';
+import LazyImage from 'components/LazyImage.js';
 
 class ProjectsPage extends React.Component {
 
@@ -143,52 +144,6 @@ class ProjectsPage extends React.Component {
     );
   }
 
-}
-
-class LazyImage extends React.Component {
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      visible: false
-    }
-
-    this.myRef = React.createRef();
-
-    if('IntersectionObserver' in window) {
-      this.intersectionObserver = new IntersectionObserver((entries) => {
-        if(entries[0].intersectionRatio <= 0) {
-          return;
-        }
-        this.setState({ visible: true });
-      }, {
-        rootMargin: "10%"
-      });
-    } else {
-      this.setState({ visible: true });
-    }
-
-  }
-
-  componentDidMount() {
-    this.intersectionObserver && this.intersectionObserver.observe(this.myRef.current);
-  }
-
-  componentWillUnmount() {
-    this.intersectionObserver && this.intersectionObserver.unobserve(this.myRef.current);
-  }
-
-  render() {
-    return (
-      <img
-        ref={this.myRef}
-        src={this.state.visible ? this.props.src : ""}
-        alt={this.props.alt}
-        title={this.props.title}
-      />
-    );
-  }
 }
 
 class Image extends React.Component {

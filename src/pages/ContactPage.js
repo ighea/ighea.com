@@ -6,6 +6,7 @@ import Mailto from 'react-protected-mailto'
 import image from 'assets/images/desk.jpg';
 
 import ExternalLink from 'components/ExternalLink.js';
+import LazyImage from 'components/LazyImage.js';
 
 const styles = {};
 styles.container = {
@@ -55,7 +56,7 @@ class ContactPage extends React.Component {
           </section>
 
           <section style={styles.image}>
-            <img src={image} alt="Oled showing Ighea powered by Raspberry PI3." />
+            <LazyImage src={image} alt="Oled showing Ighea powered by Raspberry PI3." />
           </section>
         </div>
 
