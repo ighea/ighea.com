@@ -56,7 +56,7 @@ class ContactPage extends React.Component {
           </section>
 
           <section style={styles.image}>
-            <LazyImage src={image} alt="Oled showing Ighea powered by Raspberry PI3." />
+            <LazyImage src={image} alt="A random desktop space." />
           </section>
         </div>
 
