@@ -21,6 +21,8 @@ class ProjectsPage extends React.Component {
             <p>Own sweet home!</p>
             <p>The best web site on the Internet - of course describing me.</p>
             <p>Written as a ReactJS single page application (SPA) out of curiosity and for some actual practise during the hot summer of year 2019.</p>
+            <p>See on <ExternalLink href="https://github.com/ighea/ighea.com/" title="Take a peek at the code stuff on the GitHub."><FontAwesomeIcon icon={["fab", "github"]} />&nbsp;GitHub</ExternalLink>.
+            </p>
           </div>
           <div>
             <Image image="ighea.com.jpg" alt="ighea.com frontpage from middle 2019" />
