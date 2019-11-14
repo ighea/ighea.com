@@ -15,7 +15,7 @@ class MainNav extends React.Component {
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     window.addEventListener('resize', this.updateWindowDimensions);
   }
 
