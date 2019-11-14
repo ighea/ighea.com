@@ -15,7 +15,6 @@ class Header extends React.Component {
   }
 
   handleScroll = (event) =>  {
-console.log(event);
     const pos = event.pageY || window.scrollY || ( /*chrome?*/ event.path && event.path[1] && event.path[1].scrollY) || 0;
     this.setState({ scrollY: pos });
   };
