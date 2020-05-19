@@ -11,7 +11,7 @@ function Footer(props) {
     <footer className="Footer">
       <ul>
         <li>
-          <ExternalLink href="https://www.linkedin.com/in/mika-hynna-07984a108/">
+          <ExternalLink href="https://www.linkedin.com/in/mika-hynn%C3%A4-07984a108/">
             <FontAwesomeIcon icon={['fab', 'linkedin' ]} />&nbsp;Linkedin
           </ExternalLink>
         </li>
