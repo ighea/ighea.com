@@ -42,7 +42,7 @@ class ContactPage extends React.Component {
             <p>You can find me on IRC on Freenode, IRCNet and QuakeNet networks by nick <b>ighea</b>.</p>
 
             <h3><FontAwesomeIcon icon={['fab', 'linkedin' ]} /> Hail through LinkedIn</h3>
-            <p>Don&acute;t be afraid! Send me a message on <ExternalLink href="https://www.linkedin.com/in/mika-hynna-07984a108/">LinkedIn</ExternalLink>!</p>
+            <p>Don&acute;t be afraid! Send me a message on <ExternalLink href="https://www.linkedin.com/in/mika-hynn%C3%A4-07984a108/">LinkedIn</ExternalLink>!</p>
 
             <h3><FontAwesomeIcon icon="envelope" /> Send e-mail</h3>
             <p>
